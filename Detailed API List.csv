@@ -1,0 +1,221 @@
+Related API,Description,Method,Type
+chrome.accessbilityfeatures,Manage chrome accessibility features,,User activity
+,,get(),
+chrome.commands,add keyboard shortcuts that trigger actions in your extension,,User activity
+,,getAll(),
+chrome.contentSettings,"change settings that control whether websites can use features such as cookies, JavaScript, and plugins",,User activity
+,,get(),
+,,getResourceIdentifiers(),
+chrome.cookies,"query and modify cookies, and to be notified when they change",,User activity
+,,get(),
+,,getAll(),
+,,getAllCookieStores(),
+chrome.desktopCapture,"capture content of screen, individual windows or tabs",,User activity
+,,chooseDesktopMedia(),
+chrome.devtools.inspectedWindow,"interact with the inspected window: obtain the tab ID for the inspected page, evaluate the code in the context of the inspected window, reload the page, or obtain the list of resources within the page",,Website content
+,,getResources(),
+chrome.devtools.network,retrieve the information about network requests displayed by the Developer Tools in the Network panel,,User activity
+,,getHAR(),
+chrome.devtools.panels,"integrate your extension into Developer Tools window UI: create your own panels, access existing panels, and add sidebars",,Website content
+,,setOpenResourceHandler(),
+chrome.enterprise.deviceAttributes,read device attributes,,Device information
+,,getDeviceAnnotatedLocation(),
+,,getDeviceAssetId(),
+,,getDeviceHostname(),
+,,getDeviceSerialNumber(),
+,,getDirectoryDeviceId(),
+chrome.enterprise.hardwarePlatform,get the manufacturer and model of the hardware platform where the browser runs,,Device information
+,,getHardwarePlatformInfo(),
+chrome.enterprise.networkingAttributes,read information about your current network,,Device information
+,,getNetworkDetails(),
+chrome.fileBrowserHandler,"extend the Chrome OS file browser, user can upload files",,User file system
+,,selectFile(),
+chrome.history,interact with the browser's record of visited pages,,Web histoy
+,,getVisits(),
+,,search(),
+chrome.identity,get OAuth2 access tokens,,Authentication information
+,,getAccounts(),
+,,getAuthToken(),
+,,getProfileUserInfo(),
+,,getRedirectURL(),
+chrome.instanceID,access the Instance ID service,,Device information
+,,getCreationTime(),
+,,getID(),
+,,getToken(),
+chrome.pageCapture,save a tab as MHTML.,,Website content
+,,saveAsMHTML(),
+chrome.permissions,request declared optional permissions at run time rather than install time,,Privacy-related setting
+,,contains(),
+,,getAll(),
+,,request(),
+chrome.platformKeys,"access client certificates managed by the platform. If the user or policy grants the permission, an extension can use such a certficate in its custom authentication protocol.",,Authentication information
+,,getKeyPair(),
+,,getKeyPairBySpki(),
+,,selectClientCertificates(),
+chrome.power,override the system's power management features,,Device information
+,,requestKeepAwake(),
+chrome.privacy,control usage of the features in Chrome that can affect a user's privacy,,Privacy-related setting
+,,get(),
+chrome.proxy,getting and setting the proxy configuration,,Privacy-related setting
+,,settings.get(),
+chrome.sessions,query and restore tabs and windows from a browsing session,,User activity
+,,getDevices(),
+,,getRecentlyClosed(),
+chrome.storage,"store, retrieve, and track changes to user data",,User activity
+,,local.get(),
+,,managed.get(),
+,,session.get(),
+,,sync.get(),
+chrome.system.cpu,query CPU metadata,,Device information
+,,getInfo(),
+chrome.system.display,query display metadata,,Device information
+,,getDisplayLayout(),
+,,getInfo(),
+,,showNativeTouchCalibration(),
+chrome.system.memory,query memory,,Device information
+,,getInfo(),
+chrome.system.network,get the IP address,,Location
+,,getNetworkInterfaces(),
+chrome.system.storage,query storage device information and be notified when a removable storage device is attached and detached,,Device information
+,,getAvailableCapacity(),
+,,getInfo(),
+chrome.tabGroups,You can use this API to modify and rearrange tab groups in the browser,,Website content
+,,get(),
+chrome.tab,"interact with the browser's tab system. You can use this API to create, modify, and rearrange tabs in the browser",,Website content
+,,get(),
+,,getAllInWindow(),
+,,getCurrent(),
+,,getSelected(),
+,,getZoom(),
+,,getZoomSettings(),
+chrome.webRequest,"observe and analyze traffic and to intercept, block, or modify requests in-flight",,User activity
+,,handlerBehaviorChanged(),
+chrome.windows,"interact with browser windows. You can use this API to create, modify, and rearrange windows in the browser.",,Website content
+,,get(),
+,,getAll(),
+,,getCurrent(),
+,,getLastFocused(),
+browser.action,Various get functions. Gets the HTML document set as the browser action's popup.,,Website content
+,,getTitle(),
+,,getPopup(),
+,,getBadgeText(),
+,,getBadgeBackgroundColor(),
+,,getBadgeTextColor(),
+browser.bookmarks,Retrieves a requested number of recently added bookmarks.,,Web histoy
+,,get(),
+,,getChildren(),
+,,getRecent(),
+,,getSubTree(),
+,,getTree(),
+,,search(),
+browser.browserSettings,Enables an extension to modify certain global browser settings.,,Privacy-related setting
+,,allowPopupsForUserEvents.get(),
+,,cacheEnabled.get(),
+,,colorManagement.useNativeSRGB.get(),
+,,colorManagement.mode.get(),
+,,colorManagement.useWebRenderCompositor.get(),
+,,ftpProtocolEnabled.get(),
+,,homepageOverride.get(),
+,,newTabPageOverride.get(),
+,,newTabPosition.get(),
+,,tlsVersionRestrictionConfig.maximum.get(),
+,,tlsVersionRestrictionConfig.minimum.get(),
+browser.browsingData,Enables extensions to clear the data that is accumulated while the user is browsing.,,Web histoy
+,,settings(),
+browser.captivePortal,"Determine the captive portal state of the user's connection. A captive portal is a web page displayed when a user first connects to a Wi-Fi network. The user provides information or acts on the captive portal web page to gain broader access to network resources, such as accepting terms and conditions or making a payment.",,User activity
+,,getLastChecked(),
+,,getState(),
+browser.commands,Fired when a command is executed using its associated keyboard shortcut.,,User activity
+,,getAll(),
+browser.cookies,"retrieves information about a single cookie, given its name and URL.",,User activity
+,,get(),
+,,getAll(),
+,,getAllCookieStores(),
+browser.devtools.network,retrieve the information about network requests displayed by the Developer Tools in the Network panel,,User activity
+,,network.getHAR(),
+browser.events,allows the addition and removal of listeners for a browser event,,User activity
+,,Event.get(),
+,,Rule.get(),
+browser.extension,Get the Window object for your extension's pages. Get the values for various settings.,,Website content
+,,getBackgroundPage(),
+,,getExtensionTabs(),
+,,getURL(),
+,,getViews(),
+browser.find,Find text in a web page.,,Website content
+,,find(),
+,,highlightResults(),
+,,removeHighlighting(),
+browser.hisotry,Browser history is a chronological record of pages the user has visited,,Web histoy
+,,getVisits(),
+,,search(),
+browser.identity,get OAuth2 access tokens,,Authentication information
+,,getRedirectURL(),
+browser.management,get information about other addons,,Privacy-related setting
+,,get(),
+,,getAll(),
+,,getPermissionWarningsById(),
+,,getPermissionWarningsByManifest(),
+,,getSelf(),
+browser.permission,"Enables extensions to request extra permissions at runtime, after they have been installed",,Privacy-related setting
+,,contains(),
+,,getAll(),
+browser.privacy,Access and modify various privacy-related browser settings,,Privacy-related setting
+,,network.globalPrivacyControl.get(),
+,,network.httpsOnlyMode.get(),
+,,network.networkPredictionEnabled.get(),
+,,network.peerConnectionEnabled.get(),
+,,network.webRTCIPHandlingPolicy.get(),
+,,service.alternateErrorPagesEnabled.get(),
+,,service.autofillAddressEnabled.get(),
+,,service.autofillCreditCardEnabled.get(),
+,,service.autofillEnabled.get(),
+,,service.passwordSavingEnabled.get(),
+,,service.safeBrowsingEnabled.get(),
+,,service.safeBrowsingExtendedReportingEnabled.get(),
+,,service.searchSuggestEnabled.get(),
+,,service.spellingServiceEnabled.get(),
+,,service.translationServiceEnabled.get(),
+,,websites.cookieConfig.get(),
+,,websites.cookieConfig.behavior.get(),
+,,websites.cookieConfig.nonPersistentCookies.get(),
+,,websites.firstPartyIsolate.get(),
+,,websites.hyperlinkAuditingEnabled.get(),
+,,websites.protectedContentEnabled.get(),
+,,websites.referrersEnabled.get(),
+,,websites.resistFingerprinting.get(),
+,,websites.thirdPartyCookiesAllowed.get(),
+,,websites.trackingProtectionMode.get(),
+browser.proxy,Use the proxy API to proxy web requests.,,User activity
+,,settings.set(),
+,,register(),
+browser.session,"Use the sessions API to list, and restore, tabs and windows that have been closed while the browser has been running",,Web histoy
+,,getRecentlyClosed(),
+,,getTabValue(),
+,,getWindowValue(),
+browser.tabs,"interact with the browser's tab system. You can use this API to create, modify, and rearrange tabs in the browser",,Website content
+,,get(),
+,,getAllInWindow(),
+,,getCurrent(),
+,,getSelected(),
+,,getZoom(),
+,,getZoomSettings(),
+browser.topSites,Use the topSites API to get an array containing pages that the user has visited frequently,,Web histoy
+,,get(),
+browser.types.BrowserSetting,represent a browser setting,,Privacy-related setting
+,,get(),
+browser.webNavigation,"navigations usually result in the browser making web requests, but the webRequest API is concerned with the lower-level view from the HTTP layer, while the webNavigation API is more concerned with the view from the browser UI itself",,User activity
+,,getAllFrames(),
+,,getFrame(),
+browser.webRequest,,,User activity
+,,filterResponseData(),
+,,getSecurityInfo(),
+browser.windows,"interact with browser windows. You can use this API to create, modify, and rearrange windows in the browser.",,Website content
+,,get(),
+,,getAll(),
+,,getCurrent(),
+,,getLastFocused(),
+navigator.geolocation,return geological information,,Location
+,,getcurrentposition（）,
+References:,,,
+https://developer.chrome.com/docs/extensions/reference/,,,
+https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API,,,

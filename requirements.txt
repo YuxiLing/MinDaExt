@@ -1,0 +1,8 @@
+tqdm
+nltk
+pandas
+langdetect
+openai
+scikit-learn
+scipy
+matplotlib

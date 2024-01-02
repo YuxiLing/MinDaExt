@@ -1,0 +1,61 @@
+chrome
+---- UPI ---
+ 1    34151
+ 0    21002
+-1     2314
+Name: UPI, dtype: int64
+---- HI ---
+ 0    56206
+ 1      924
+-1      337
+Name: HI, dtype: int64
+---- FPI ---
+ 0    53091
+ 1     4183
+-1      193
+Name: FPI, dtype: int64
+---- AI ---
+ 1    30010
+ 0    24479
+-1     2978
+Name: AI, dtype: int64
+---- PCI ---
+ 0    50405
+ 1     5932
+-1     1130
+Name: PCI, dtype: int64
+---- LI ---
+ 0    52879
+ 1     4373
+-1      215
+Name: LI, dtype: int64
+---- WHI ---
+ 1    33440
+ 0    23763
+-1      264
+Name: WHI, dtype: int64
+---- UAI ---
+ 0    35994
+ 1    21329
+-1      144
+Name: UAI, dtype: int64
+---- WCI ---
+ 0    36348
+ 1    20566
+-1      553
+Name: WCI, dtype: int64
+---- DI ---
+-1    27090
+ 0    27056
+ 1     3321
+Name: DI, dtype: int64
+---- PS ---
+ 1    33912
+ 0    22732
+-1      823
+Name: PS, dtype: int64
+---- FS ---
+ 0    55547
+ 1     1699
+-1      221
+Name: FS, dtype: int64
