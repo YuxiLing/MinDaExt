@@ -1,6 +1,6 @@
 # Essential or Excessive? MinDaExt: Measuring Data Minimization Practices among Browser Extensions
 
-This is the repository for the submitssion of SANER 2024.
+This is the repository for the paper accepted by SANER 2024.
 
 ### Detailed Tables Mentioned in the Paper
 ```
