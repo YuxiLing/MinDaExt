@@ -2,7 +2,7 @@
 title:
 email: yuxiling@u.nus.edu
 description: > # this means to ignore newlines until "baseurl:"
-baseurl: ["/maliext.html","/mindaext.html","ppcomp.html"] # the subpath of your site, e.g. /blog/
+baseurl: ["maliext.html","mindaext.html","ppcomp.html"] # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
 page_link: https://yuxiling.github.io
