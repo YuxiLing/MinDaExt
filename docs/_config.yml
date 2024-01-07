@@ -5,8 +5,9 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://yuxiling.github.io/MinDaExt" # the base hostname & protocol for your site
 
+page_link: https://yuxiling.github.io
 twitter_username: 
-github_username: yuxiling
+github_username: YuxiLing
 
 # Build settings
 markdown: kramdown

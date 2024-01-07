@@ -2,6 +2,8 @@
 
 This is the repository for the paper accepted by SANER 2024.
 
+Find more information at our project website: *"[BEG](https://yuxiling.github.io/MinDaExt/ "BEG")"* 
+
 ### Detailed Tables Mentioned in the Paper
 ```
 ./mindaext_tables.csv
